@@ -13,7 +13,7 @@ RUN dnf -y --nogpg update && dnf clean all
 
 # install jsroot
 RUN npm install -g bower
-RUN bower install jsroot
+RUN bower install jsroot --allow-root
 
 # Add configurations
 RUN mkdir -p /install
